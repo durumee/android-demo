@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ExSpinner"
+rootProject.name = "RecyclerViewSpinner"
 include(":app")
  
