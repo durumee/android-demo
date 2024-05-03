@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnShowBottomSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BottomSheet 열기" />
+
+        <Button
+            android:id="@+id/btnShowBottomSheetAutoClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BottomSheet 열기(5초 뒤 닫기)" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <include layout="@layout/bottom_sheet_content" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
