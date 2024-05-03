@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ExGallery"
+rootProject.name = "RecyclerViewGallery"
 include(":app")
  
